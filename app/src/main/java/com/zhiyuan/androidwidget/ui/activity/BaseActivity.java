@@ -1,5 +1,6 @@
 package com.zhiyuan.androidwidget.ui.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -11,7 +12,7 @@ import butterknife.ButterKnife;
  * Created by stefan on 2017/4/14.
  */
 
-public abstract class BaseActivity extends AppCompatActivity {
+public abstract class BaseActivity extends Activity {
 	
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
