@@ -1,21 +1,19 @@
 package com.zhiyuan.androidwidget.ui.activity;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.zhiyuan.androidwidget.R;
+
 import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.PagerTitleStrip;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.zhiyuan.androidwidget.R;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Created by stefan on 2017/4/20.
