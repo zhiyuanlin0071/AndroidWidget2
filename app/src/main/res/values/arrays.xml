@@ -2,8 +2,8 @@
 <resources>
     <string-array name="view">
         <item>RecycleView</item>
-        <item>ListView</item>
-        <item>GridView</item>
+        <item>ViewPager</item>
+        <item>WebView</item>
     </string-array>
 
     <string-array name="recycle_view_layout">

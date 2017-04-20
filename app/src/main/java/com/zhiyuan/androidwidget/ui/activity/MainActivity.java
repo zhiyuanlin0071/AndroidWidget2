@@ -45,6 +45,12 @@ public class MainActivity extends BaseActivity {
                       Intent intent=new Intent(MainActivity.this,RecycleViewActivity.class);
                       startActivity(intent);
                       break;
+                  case 1:
+                      Intent intent1=new Intent(MainActivity.this,ViewPagerActivity.class);
+                      startActivity(intent1);
+                      break;
+                  case 2:
+                      break;
               }
           }
       });
