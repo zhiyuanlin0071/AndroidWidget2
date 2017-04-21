@@ -50,6 +50,10 @@ public class MainActivity extends BaseActivity {
 						Intent intent2 = new Intent(MainActivity.this, WebViewActivity.class);
 						startActivity(intent2);
 						break;
+					case 3 :
+						Intent intent3 = new Intent(MainActivity.this, XmlActivity.class);
+						startActivity(intent3);
+						break;
 				}
 			}
 		});

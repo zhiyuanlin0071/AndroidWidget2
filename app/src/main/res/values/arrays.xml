@@ -4,6 +4,7 @@
         <item>RecycleView</item>
         <item>ViewPager</item>
         <item>WebView</item>
+        <item>Xml</item>
     </string-array>
 
     <string-array name="recycle_view_layout">

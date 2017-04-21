@@ -18,6 +18,7 @@
         <activity android:name=".ui.activity.RecycleViewActivity"></activity>
         <activity android:name=".ui.activity.ViewPagerActivity"></activity>
         <activity android:name=".ui.activity.WebViewActivity"></activity>
+        <activity android:name=".ui.activity.XmlActivity"></activity>
     </application>
 
 </manifest>
