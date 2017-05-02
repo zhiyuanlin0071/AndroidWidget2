@@ -24,4 +24,11 @@
         android:layout_height="wrap_content"
         android:text="CloseService"
         android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/button_unbind_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UnBindService"
+        android:textAllCaps="false"/>
 </LinearLayout>

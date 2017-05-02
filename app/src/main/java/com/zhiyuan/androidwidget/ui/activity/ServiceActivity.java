@@ -20,15 +20,30 @@ import butterknife.OnClick;
  */
 
 public class ServiceActivity extends BaseActivity {
-	private final String	TAG	= getClass().getSimpleName();
+	private final String			TAG		= getClass().getSimpleName();
 	@BindView(R.id.button_start_service)
-	Button					mButtonStartService;
+	Button							mButtonStartService;
 	@BindView(R.id.button_close_service)
-	Button					mButtonCloseService;
-	Intent					intent;
+	Button							mButtonCloseService;
+	Intent							intent;
 	@BindView(R.id.button_bind_service)
-	Button					mButtonBindService;
+	Button							mButtonBindService;
+	@BindView(R.id.button_unbind_service)
+	Button							mButtonUnbindService;
+	private AndroidService.MyBinder	mMyBinder;
 	
+	private ServiceConnection		cons	= new ServiceConnection() {
+												@Override
+												public void onServiceConnected(ComponentName name, IBinder service) {
+													mMyBinder = (AndroidService.MyBinder) service;
+													mMyBinder.startDownload();
+												}
+												
+												@Override
+												public void onServiceDisconnected(ComponentName name) {
+													
+												}
+											};
 	@Override
 	protected void init() {
 		
@@ -63,18 +78,19 @@ public class ServiceActivity extends BaseActivity {
 	@OnClick(R.id.button_bind_service)
 	public void bindService() {
 		intent = new Intent(this, AndroidService.class);
-		bindService(intent, con, BIND_AUTO_CREATE);
+		bindService(intent, cons, BIND_AUTO_CREATE);
 	}
-	ServiceConnection con = new ServiceConnection() {
-		@Override
-		public void onServiceConnected(ComponentName name, IBinder service) {
-			Log.i(TAG, "onServiceConnected");
-		}
+	@OnClick(R.id.button_unbind_service)
+	public void unbindService() {
+		intent = new Intent(this, AndroidService.class);
+		unbindService(cons);
 		
-		@Override
-		public void onServiceDisconnected(ComponentName name) {
-			Log.i(TAG, "onServiceDisconnected");
-		}
-	};
+	}
 	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		// TODO: add setContentView(...) invocation
+		ButterKnife.bind(this);
+	}
 }

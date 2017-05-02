@@ -3,6 +3,7 @@ package com.zhiyuan.androidwidget.service;
 import android.app.Service;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.os.Binder;
 import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
@@ -17,11 +18,13 @@ import java.io.PrintWriter;
 public class AndroidService extends Service {
 	private final String	TAG		= getClass().getSimpleName();
 	int						count	= 0;
+	private MyBinder		mBinder	= new MyBinder();
+	
 	@Nullable
 	@Override
 	public IBinder onBind(Intent intent) {
 		Log.i(TAG, "*******onBind*******");
-		return null;
+		return mBinder;
 	}
 	
 	@Override
@@ -115,5 +118,12 @@ public class AndroidService extends Service {
 		super();
 		Log.i(TAG, "*******AndroidService*******");
 		
+	}
+	public class MyBinder extends Binder {
+		
+		public void startDownload() {
+			Log.i(TAG, "*******startDownload*******");
+			
+		}
 	}
 }
