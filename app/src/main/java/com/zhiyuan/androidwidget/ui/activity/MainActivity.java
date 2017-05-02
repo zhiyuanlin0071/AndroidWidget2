@@ -54,6 +54,13 @@ public class MainActivity extends BaseActivity {
 						Intent intent3 = new Intent(MainActivity.this, XmlActivity.class);
 						startActivity(intent3);
 						break;
+					case 4 :
+						Intent intent4 = new Intent(MainActivity.this, PopupWindowActivity.class);
+						startActivity(intent4);
+					case 5 :
+						Intent intent5 = new Intent(MainActivity.this, ServiceActivity.class);
+						startActivity(intent5);
+						break;
 				}
 			}
 		});

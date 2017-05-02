@@ -5,6 +5,8 @@
         <item>ViewPager</item>
         <item>WebView</item>
         <item>Xml</item>
+        <item>PopWindow</item>
+        <item>Service</item>
     </string-array>
 
     <string-array name="recycle_view_layout">

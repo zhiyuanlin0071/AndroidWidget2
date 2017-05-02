@@ -19,6 +19,14 @@
         <activity android:name=".ui.activity.ViewPagerActivity"></activity>
         <activity android:name=".ui.activity.WebViewActivity"></activity>
         <activity android:name=".ui.activity.XmlActivity"></activity>
+        <activity android:name=".ui.activity.PopupWindowActivity"></activity>
+        <activity android:name=".ui.activity.ServiceActivity"></activity>
+
+        <service android:name=".service.AndroidService">
+            <intent-filter>
+                <action android:name="com.zhiyuan.service.test"></action>
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>
