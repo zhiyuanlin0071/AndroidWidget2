@@ -61,6 +61,14 @@ public class MainActivity extends BaseActivity {
 						Intent intent5 = new Intent(MainActivity.this, ServiceActivity.class);
 						startActivity(intent5);
 						break;
+					case 6 :
+						Intent intent6 = new Intent(MainActivity.this, BroadcastActivity.class);
+						startActivity(intent6);
+						break;
+					case 7 :
+						Intent intent7 = new Intent(MainActivity.this, ContentProviderActivity.class);
+						startActivity(intent7);
+						break;
 				}
 			}
 		});

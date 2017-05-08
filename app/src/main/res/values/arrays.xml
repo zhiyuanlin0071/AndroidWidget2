@@ -7,6 +7,8 @@
         <item>Xml</item>
         <item>PopWindow</item>
         <item>Service</item>
+        <item>BroadcastReceiver</item>
+        <item>ContentProvider</item>
     </string-array>
 
     <string-array name="recycle_view_layout">

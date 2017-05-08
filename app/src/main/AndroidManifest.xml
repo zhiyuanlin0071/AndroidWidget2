@@ -2,7 +2,12 @@
 <manifest package="com.zhiyuan.androidwidget"
           xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_PROFILE"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,21 +17,40 @@
         <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.RecycleViewActivity"></activity>
-        <activity android:name=".ui.activity.ViewPagerActivity"></activity>
-        <activity android:name=".ui.activity.WebViewActivity"></activity>
-        <activity android:name=".ui.activity.XmlActivity"></activity>
-        <activity android:name=".ui.activity.PopupWindowActivity"></activity>
-        <activity android:name=".ui.activity.ServiceActivity"></activity>
+        <activity android:name=".ui.activity.RecycleViewActivity"/>
+        <activity android:name=".ui.activity.ViewPagerActivity"/>
+        <activity android:name=".ui.activity.WebViewActivity"/>
+        <activity android:name=".ui.activity.XmlActivity"/>
+        <activity android:name=".ui.activity.PopupWindowActivity"/>
+        <activity android:name=".ui.activity.ServiceActivity"/>
 
         <service android:name=".service.AndroidService">
             <intent-filter>
-                <action android:name="com.zhiyuan.service.test"></action>
+                <action android:name="com.zhiyuan.service.test"/>
             </intent-filter>
         </service>
+
+        <activity android:name=".ui.activity.BroadcastActivity">
+        </activity>
+
+        <receiver android:name=".service.MyReceiver">
+            <intent-filter>
+                <action android:name="com.statci"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="Intent.ACTION_AIRPLANE_MODE_CHANGED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.activity.ContentProviderActivity">
+        </activity>
     </application>
 
 </manifest>
