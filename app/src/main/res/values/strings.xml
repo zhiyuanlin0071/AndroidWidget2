@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidWidget</string>
+    <string name="hello_world">Hello World</string>
+    <string name="setting">Setting</string>
 </resources>

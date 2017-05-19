@@ -1,5 +1,6 @@
 package com.zhiyuan.androidwidget.ui.activity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -68,6 +69,14 @@ public class MainActivity extends BaseActivity {
 					case 7 :
 						Intent intent7 = new Intent(MainActivity.this, ContentProviderActivity.class);
 						startActivity(intent7);
+						break;
+					case 8 :
+						Intent intent8 = new Intent(MainActivity.this, JsonActivity.class);
+						startActivity(intent8);
+						break;
+					case 9 :
+						Intent intent9 = new Intent(MainActivity.this, DataStorageActivity.class);
+						startActivity(intent9);
 						break;
 				}
 			}

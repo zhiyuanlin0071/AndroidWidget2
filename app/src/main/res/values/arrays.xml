@@ -9,6 +9,8 @@
         <item>Service</item>
         <item>BroadcastReceiver</item>
         <item>ContentProvider</item>
+        <item>Json</item>
+        <item>数据存储</item>
     </string-array>
 
     <string-array name="recycle_view_layout">
@@ -16,4 +18,12 @@
         <item>GridLayoutManager</item>
         <item>StaggeredGridLayoutManager</item>
     </string-array>
+
+    <string-array name="data_save">
+        <item>文件存储</item>
+        <item>SharePreference</item>
+        <item>SQLite</item>
+        <item>GreenDao</item>
+    </string-array>
+
 </resources>

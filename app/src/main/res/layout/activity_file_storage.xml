@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/filename"
+        style="@style/match_or_wrap1"
+        android:layout_marginTop="30dp"
+        android:hint="请输入文件名" />
+
+    <EditText
+        android:id="@+id/filecontent"
+        style="@style/match_or_wrap1"
+        android:layout_marginTop="30dp"
+        android:hint="请输入文件内容" />
+
+    <Button
+        android:id="@+id/write"
+        style="@style/match_or_wrap1"
+        android:text="写入" />
+
+    <Button
+        android:id="@+id/clear"
+        style="@style/match_or_wrap1"
+        android:text="清空" />
+
+    <Button
+        android:id="@+id/read"
+        style="@style/match_or_wrap1"
+        android:text="读取" />
+
+    <Button
+        android:id="@+id/assets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取Assets" />
+
+    <TextView
+        android:id="@+id/content"
+        style="@style/match_parent"></TextView>
+
+
+</LinearLayout>
