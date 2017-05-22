@@ -113,4 +113,13 @@ public class GreenDaoActivity extends BaseActivity {
 		// TODO: add setContentView(...) invocation
 		ButterKnife.bind(this);
 	}
+	
+	public void inserAll() {
+		MyApplication.getDaoInstant().getUserDao().getSession().runInTx(new Runnable() {
+			@Override
+			public void run() {
+				
+			}
+		});
+	}
 }

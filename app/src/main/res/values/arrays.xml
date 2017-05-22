@@ -11,6 +11,7 @@
         <item>ContentProvider</item>
         <item>Json</item>
         <item>数据存储</item>
+        <item>网络加载</item>
     </string-array>
 
     <string-array name="recycle_view_layout">
@@ -25,5 +26,6 @@
         <item>SQLite</item>
         <item>GreenDao</item>
     </string-array>
+
 
 </resources>

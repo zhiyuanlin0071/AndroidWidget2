@@ -37,6 +37,18 @@
         android:layout_height="wrap_content"
         android:text="读取Assets" />
 
+    <Button
+        android:id="@+id/read_sdcard_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="读取sdcard" />
+
+    <Button
+        android:id="@+id/write_sdcard_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="写入数据sdcard" />
+
     <TextView
         android:id="@+id/content"
         style="@style/match_parent"></TextView>

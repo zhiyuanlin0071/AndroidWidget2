@@ -78,6 +78,10 @@ public class MainActivity extends BaseActivity {
 						Intent intent9 = new Intent(MainActivity.this, DataStorageActivity.class);
 						startActivity(intent9);
 						break;
+					case 10 :
+						Intent intent10 = new Intent(MainActivity.this, NetworkActivity.class);
+						startActivity(intent10);
+						break;
 				}
 			}
 		});
