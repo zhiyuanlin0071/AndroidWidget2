@@ -55,7 +55,8 @@
         <activity android:name=".ui.activity.DataStorageActivity" />
         <activity android:name=".ui.activity.FileStorageActivity" />
         <activity android:name=".ui.activity.GreenDaoActivity" />
-        <activity android:name=".ui.activity.NetworkActivity"></activity>
+        <activity android:name=".ui.activity.NetworkActivity" />
+        <activity android:name=".ui.activity.RetrofitIpActivity"></activity>
     </application>
 
 </manifest>

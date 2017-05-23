@@ -21,6 +21,8 @@ import com.android.volley.toolbox.Volley;
 import com.github.lazylibrary.util.ToastUtils;
 import com.zhiyuan.androidwidget.R;
 import com.zhiyuan.androidwidget.model.Weather;
+import com.zhiyuan.androidwidget.presenter.NetworkOkHttp2;
+import com.zhiyuan.androidwidget.presenter.NetworkVolley;
 import com.zhiyuan.androidwidget.utill.http.GsonRequest;
 import com.zhiyuan.androidwidget.utill.http.XMLRequest;
 
@@ -55,9 +57,13 @@ public class NetworkActivity extends BaseActivity {
 	Button					mGsonBtn;
 	private String			weather		= "http://api.weatherdt.com/common/?area=101160901|101160801&type=air&key=fd034bf8fe70289698ec4ea79876feaa";
 	private String			imageview	= "http://img.my.csdn.net/uploads/201404/13/1397393290_5765.jpeg";
+	private NetworkVolley	mNetworkVolley;
+	private NetworkOkHttp2	mNetworkOkHttp;
 	@Override
 	protected void init() {
 		requestQueue = Volley.newRequestQueue(this);
+		// mNetworkVolley = new NetworkVolley(requestQueue);
+		mNetworkOkHttp = new NetworkOkHttp2(this);
 	}
 	
 	@Override
@@ -220,33 +226,13 @@ public class NetworkActivity extends BaseActivity {
 	}
 	
 	private void get() {
-		StringRequest request = new StringRequest("http://www.runoob.com/", new Response.Listener<String>() {
-			@Override
-			public void onResponse(String s) {
-				Log.d(TAG, s);
-			}
-		}, new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError volleyError) {
-				Log.d(TAG, volleyError.getMessage(), volleyError);
-			}
-		});
-		requestQueue.add(request);
+		// mNetworkVolley.get();
+		mNetworkOkHttp.get();
 	}
 	
 	private void post() {
-		StringRequest request = new StringRequest(Request.Method.POST, "http://www.runoob.com/", new Response.Listener<String>() {
-			@Override
-			public void onResponse(String s) {
-				Log.d(TAG, s);
-			}
-		}, new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError volleyError) {
-				Log.d(TAG, volleyError.getMessage(), volleyError);
-			}
-		});
-		requestQueue.add(request);
+		// mNetworkVolley.post();
+		mNetworkOkHttp.post();
 	}
 	
 	@Override

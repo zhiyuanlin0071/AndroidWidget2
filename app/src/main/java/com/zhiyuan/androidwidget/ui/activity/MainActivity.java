@@ -82,6 +82,10 @@ public class MainActivity extends BaseActivity {
 						Intent intent10 = new Intent(MainActivity.this, NetworkActivity.class);
 						startActivity(intent10);
 						break;
+					case 11 :
+						Intent intent11 = new Intent(MainActivity.this, RetrofitIpActivity.class);
+						startActivity(intent11);
+						break;
 				}
 			}
 		});

@@ -12,6 +12,7 @@
         <item>Json</item>
         <item>数据存储</item>
         <item>网络加载</item>
+        <item>Retrofit Ip</item>
     </string-array>
 
     <string-array name="recycle_view_layout">
