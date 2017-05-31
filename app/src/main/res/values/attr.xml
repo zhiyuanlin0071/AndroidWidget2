@@ -6,4 +6,20 @@
         <attr name="color_conver" format="color"></attr>
     </declare-styleable>
 
+    <declare-styleable name="MyTitlebar">
+        <attr name="title_backgroud_color" format="reference|integer"></attr>
+        <attr name="title_txt_color" format="color"></attr>
+        <attr name="title_text" format="string" />
+        <attr name="title_text_drawable" format="reference|integer" />
+        <attr name="left_button_visible" format="boolean" />
+        <attr name="right_button_visible" format="boolean" />
+        <attr name="left_btn_text" format="string"></attr>
+        <attr name="left_btn_color" format="color"></attr>
+        <attr name="left_button_drawable" format="reference|integer" />
+        <attr name="right_button_text" format="string" />
+        <attr name="right_button_text_color" format="color" />
+        <attr name="right_button_drawable" format="reference|integer" />
+    </declare-styleable>
+
+
 </resources>

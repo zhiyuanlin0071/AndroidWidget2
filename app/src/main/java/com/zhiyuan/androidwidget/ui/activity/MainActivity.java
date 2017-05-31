@@ -92,6 +92,10 @@ public class MainActivity extends BaseActivity {
 						Intent intent12 = new Intent(MainActivity.this, ViewActivity.class);
 						startActivity(intent12);
 						break;
+					case 13 :
+						Intent intent13 = new Intent(MainActivity.this, TiitlebarActivity.class);
+						startActivity(intent13);
+						break;
 				}
 			}
 		});

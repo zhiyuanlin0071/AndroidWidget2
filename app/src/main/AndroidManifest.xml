@@ -57,7 +57,8 @@
         <activity android:name=".ui.activity.GreenDaoActivity" />
         <activity android:name=".ui.activity.NetworkActivity" />
         <activity android:name=".ui.activity.RetrofitIpActivity" />
-        <activity android:name=".ui.activity.ViewActivity"></activity>
+        <activity android:name=".ui.activity.ViewActivity" />
+        <activity android:name=".ui.activity.TiitlebarActivity"></activity>
     </application>
 
 </manifest>
