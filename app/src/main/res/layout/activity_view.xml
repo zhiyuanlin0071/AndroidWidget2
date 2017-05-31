@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lee="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<com.zhiyuan.androidwidget.widget.MyView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--lee:color_conver="@color/colorPrimaryDark"-->
+    <!--lee:color_main="@color/colorAccent"-->
+    <!--lee:radius="50dp" />-->
+
+    <com.zhiyuan.androidwidget.widget.MyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        lee:color_conver="@color/colorGreen"
+        lee:color_main="@color/colorAccent"
+        lee:radius="100dp" />
+
+</LinearLayout>

@@ -1,9 +1,11 @@
 package com.zhiyuan.androidwidget.ui.activity;
 
 import android.Manifest;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -85,6 +87,10 @@ public class MainActivity extends BaseActivity {
 					case 11 :
 						Intent intent11 = new Intent(MainActivity.this, RetrofitIpActivity.class);
 						startActivity(intent11);
+						break;
+					case 12 :
+						Intent intent12 = new Intent(MainActivity.this, ViewActivity.class);
+						startActivity(intent12);
 						break;
 				}
 			}

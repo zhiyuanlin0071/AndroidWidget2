@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MyView">
+        <attr name="radius" format="dimension"></attr>
+        <attr name="color_main" format="color"></attr>
+        <attr name="color_conver" format="color"></attr>
+    </declare-styleable>
+
+</resources>
