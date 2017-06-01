@@ -9,20 +9,26 @@
         android:id="@+id/mytitlebar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        lee:title_text="Home"
         lee:left_button_drawable="@drawable/back"
         lee:left_button_visible="true"
         lee:right_button_drawable="@drawable/add"
-        lee:title_backgroud_color="@color/colorGreen"></com.zhiyuan.androidwidget.widget.MyTitlebar>
+        lee:title_backgroud_color="@color/colorGreen"
+        lee:title_text="Home"></com.zhiyuan.androidwidget.widget.MyTitlebar>
 
     <com.zhiyuan.androidwidget.widget.MyTitlebar
         android:id="@+id/mytitlebar1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        lee:title_text="Home"
         lee:left_button_drawable="@drawable/back"
         lee:left_button_visible="true"
         lee:right_button_drawable="@drawable/add"
-        lee:title_backgroud_color="@color/colorYellow"></com.zhiyuan.androidwidget.widget.MyTitlebar>
+        lee:title_backgroud_color="@color/colorYellow"
+        lee:title_text="Home"></com.zhiyuan.androidwidget.widget.MyTitlebar>
 
+    <com.zhiyuan.androidwidget.widget.TagsLayout
+        android:id="@+id/taglayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lee:tagHorizontalSpace="10dp"
+        lee:tagVerticalSpace="10dp"></com.zhiyuan.androidwidget.widget.TagsLayout>
 </LinearLayout>

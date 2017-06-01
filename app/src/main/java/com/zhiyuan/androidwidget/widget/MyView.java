@@ -27,14 +27,12 @@ public class MyView extends View {
     private int color_cover;
 
     public MyView(Context context) {
-        super(context);
-        init();
+		this(context, null);
     }
 
     public MyView(Context context, @Nullable AttributeSet attrs) {
-        super(context, attrs);
-        init();
-        initParams(context, attrs);
+		this(context, attrs, 0);
+		
     }
 
     public MyView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
