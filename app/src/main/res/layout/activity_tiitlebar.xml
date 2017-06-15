@@ -31,4 +31,9 @@
         android:layout_height="wrap_content"
         lee:tagHorizontalSpace="10dp"
         lee:tagVerticalSpace="10dp"></com.zhiyuan.androidwidget.widget.TagsLayout>
+
+
+    <com.zhiyuan.androidwidget.widget.SquareView
+        android:layout_width="match_parent"
+        android:layout_height="500dp" />
 </LinearLayout>
