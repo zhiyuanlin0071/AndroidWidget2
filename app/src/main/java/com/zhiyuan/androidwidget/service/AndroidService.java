@@ -19,6 +19,7 @@ public class AndroidService extends Service {
 	private final String	TAG		= getClass().getSimpleName();
 	int						count	= 0;
 	private MyBinder		mBinder	= new MyBinder();
+	private String            test;
 	
 	@Nullable
 	@Override
